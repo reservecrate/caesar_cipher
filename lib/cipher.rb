@@ -1,11 +1,5 @@
 require 'debug'
 
-class String
-  def is_upper?
-    self == self.upcase
-  end
-end
-
 class Cipher
   def caesar_cipher(secret, shift)
     alph_positions = secret.split('').map { |chr| chr.ord }
